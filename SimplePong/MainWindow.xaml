@@ -1,0 +1,28 @@
+﻿<Window x:Class="SimplePong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplePong"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+    <Grid>
+        <Canvas x:Name="Canvas" Background="AliceBlue" Margin="10,10,474,82" Width="200" Height="400">
+            <Rectangle Fill="Red" Height="5"  Stroke="Transparent" Canvas.Top="395" Width="200"/>
+            <Rectangle Fill="Red" Height="5"  Stroke="Transparent" Canvas.Top="0" Width="200"/>
+
+            <Rectangle x:Name="PinBall" Fill="Black" Height="6"  Stroke="Transparent"  Width="6"/>
+            
+            <Rectangle x:Name="PaddleOne" Fill="Black" Height="5" Stroke="Transparent" Canvas.Top="5" />
+            <Rectangle x:Name="PaddleTwo" Fill="Black" Height="5" Stroke="Transparent" Canvas.Top="390" />
+            
+        </Canvas>
+        <TextBlock x:Name="xPosText" HorizontalAlignment="Left" Margin="219,10,0,0" TextWrapping="Wrap" Text="x" VerticalAlignment="Top"/>
+        <TextBlock x:Name="yPosText" HorizontalAlignment="Left" Margin="219,31,0,0" TextWrapping="Wrap" Text="y" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="PlayerOneLifeText" HorizontalAlignment="Left" Margin="219,60,0,0" TextWrapping="Wrap" Text="P1" VerticalAlignment="Top"/>
+        <TextBlock x:Name="PlayerTwoLifeText" HorizontalAlignment="Left" Margin="219,81,0,0" TextWrapping="Wrap" Text="P2" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
